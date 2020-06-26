@@ -1,0 +1,11 @@
+let data = [];
+activity = new Activity;
+activity.getItems();
+activity.getTotalIn();
+activity.getTotalOut();
+let history = [];
+historia = new History();
+historia.getItems();
+historia.getHistoryTotalIn();
+historia.getHistoryTotalOut();
+console.log(history);

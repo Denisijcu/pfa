@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>DotNet API and GSuite</title>
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <h1>Users API</h1>
+
+    <hr>
+
+    <div class="container">
+
+        <div id="Search">
+            <h3>Search</h3>
+            <input type="text" id="seach-name" />
+            <input type="button" onclick="searchItem()" value="Search" />
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </div>
+
+        <h3>Add</h3>
+        <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+            <input type="text" id="add-email" placeholder="Email" />
+            <input type="text" id="add-userName" placeholder="User Name" />
+            <input type="date" id="add-dateRegistered" placeholder="Date Register" />
+            <label>Notification</label>
+            <input type="checkbox" id="add-allowNotification" />
+            <input type="submit" value="Add" />
+        </form>
+
+        <div id="area" class="area-a show-area">
+            <p id="counter"></p>
+
+            <table>
+                <tr>
+                    <th></th>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>User Name</th>
+                    <th>Date Registered</th>
+                    <th>Allow Notification</th>
+                    <th></th>
+                </tr>
+                <tbody id="todos"></tbody>
+            </table>
+        </div>
+
+        <div id="edit-area" class="edit-area hide-area">
+            <h3>Edit</h3>
+
+            <form action="javascript:void(0);" method="POST" onsubmit="saveEdit()">
+                <input type="text" id="edit-email" placeholder="Email" />
+                <input type="text" id="edit-userName" placeholder="User Name" />
+                <input type="text" id="edit-dateRegistered" placeholder="Date Register" />
+                <label>Notification</label>
+                <input type="checkbox" id="edit-allowNotification" />
+                <input type="submit" value="Save" />
+
+            </form>
+
+
+        </div>
+    </div>
+    <script src="js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getUsers();
+    </script>
+</body>
+
+</html>

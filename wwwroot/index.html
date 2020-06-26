@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <title>PFA</title>
+</head>
+
+<body id="lyt-content">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+     <!--  Views-->
+    <script src="views/lyt_login.js"></script>
+    <script src="views/lyt_head.js"></script>
+    <script src="views/lyt_body_search.js"></script>
+    <script src="views/lyt_body_menu.js"></script>
+    <script src="views/lyt_body_content.js"></script>
+    <script src="views/lyt_body.js"></script>
+    <script src="views/lyt_foot.js"></script>
+    <script src="views/layout.js"></script>
+    <script src="views/settings/lyt_addItem.js"></script>
+    <script src="views/register/lyt_filter.js"></script>
+    <script src="views/search/lyt_form.js"></script>
+    <script src="views/closebills/lyt_closebill.js"></script>
+    <!--  Models-->
+    <script src="models/data/api.js"></script>
+    <script src="models/data/users.js"></script>
+    <script src="models/data/history.js"></script>
+    <script src="models/data/data.js"></script>
+    <!-- Variables publics-->
+    <script src="startup/globals.js"></script>
+    <script src="public/js/app.js"></script>
+   <!--  Controllers-->
+    <script src="controllers/seccions/home.js"></script>
+    <!--
+    <script src="controllers/seccions/about.js"></script>
+    <script src="controllers/seccions/contact.js"></script>
+    -->
+    <script src="controllers/seccions/login.js"></script>
+    <script src="controllers/seccions/logout.js"></script>
+    <script src="controllers/accions/dashboard.js"></script>
+    <script src="controllers/accions/bills.js"></script>
+    <script src="controllers/accions/closebills/closebill.js"></script>
+    <script src="controllers/accions/register.js"></script>
+    <script src="controllers/accions/settings/main.js"></script>
+    <script src="controllers/accions/settings/addBill.js"></script>
+    <script src="controllers/accions/settings/editBill.js"></script>
+    <script src="controllers/accions/settings/deleteBill.js"></script>
+    <script src="controllers/accions/settings/updateBill.js"></script>
+    <script src="controllers/accions/search/onSettings.js"></script>
+    <script src="controllers/accions/search/onBills.js"></script>
+    <script src="controllers/accions/search/onClose.js"></script>
+    <script src="controllers/accions/search/search.js"></script>
+   
+    <script>
+        fnHome();
+        activity = new Activity();
+        activity.getMonth();
+        console.log('Status is', status);
+        
+    </script>
+</body>
+
+</html>
